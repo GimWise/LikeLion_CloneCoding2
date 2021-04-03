@@ -21,10 +21,10 @@
     <nav id="nav">
         <div class="navbar__logo">LikeLion</div>
         <ul class="navbar__menu">
-            <li class="navbar__menu__item"><a href="#home">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item"><a href="#member">Member</li>
-            <li class="navbar__menu__item">Contact</li>
+            <li class="navbar__menu__item"><a href="#home">Home</a></li>
+            <li class="navbar__menu__item"><a href="#about">About</a></li>
+            <li class="navbar__menu__item"><a href="#member">Member</a></li>
+            <li class="navbar__menu__item"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div id="home" class="box">
@@ -53,24 +53,44 @@
                 </div>
             </div>
             <button class="home__aply">지원하기</button>
+            <div class="modal"> 
+                <div class="modal-content"> 
+                    <span class="close-button">&times;</span> 
+                    <div class="popup__title">Welcome</div>
+                    <div class="popup__description">멋쟁이사자처럼에 지원해 주셔서 감사합니다!</div>
+                    <form action="" method="POST"> 
+                        <input type="email" name="email" placeholder="Enter Email Address" required="required"> 
+                        <input type="button" id="submit" value="submit"> 
+                    </form> 
+                </div> 
+            </div>
             <div class="contact">
                 <a href="https://www.facebook.com/likelion.net" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
                 <a href="https://www.facebook.com/likelion.net" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
             </div>
         </div>
     </div>
+    <div id="about" class="box">
+        <div class="empty">Empty</div>
+    </div>
     <div id="member" class="box">
         <div class="member__title">Introduce Our Member</div>
         <div class="member__picture">
-            <ul>
-                <li class="picture__items"></li>
-                <li class="picture__items"></li>
-                <li class="picture__items"></li>
-                <li class="picture__items"></li>
-                <li class="picture__items"></li>
-            </ul>
+            <div class="row1">
+                <div class="picture"><img src="img/1.jpg"></div>
+                <div class="picture"><img src="img/2.jpg"></div>
+                <div class="picture"><img src="img/3.jpg"></div>
+            </div>
+            <div class="row2">
+                <div class="picture"><img src="img/4.jpg"></div>
+                <div class="picture"><img src="img/5.jpg"></div>
+            </div>
         </div>
     </div>
+    <div id="contact" class="box">
+        <div class="empty">Empty</div>
+    </div>
     <script src="script.js"></script>
+
 </body>
 </html>
